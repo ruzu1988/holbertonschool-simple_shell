@@ -1,0 +1,56 @@
+.TH SHELL " 16 August 2024" "Simple Shell" "man page"
+
+.SH NAME
+.B simple shell
+/ Minimalisct Unix command line interpreter
+
+.SB simple shell
+
+.SH SYNOPSIS
+.B ./hsh
+
+.B #inclide "main.h"
+
+.B ./hsh
+
+.B [command] [argument]
+
+.SH DESCRIPTION
+
+Minimalistic Unix command line interpreter that executes commands from a user terminal
+
+.SH INSTALLATION
+
+Compile files
+
+gcc -Wall -Werror -pedantic super_simple_shell.c execute.c -o super_simple_shell
+
+Run the command to open the simple shell
+
+./hsh
+
+.SH LIBRARIES USED
+
+#define BUFFER_SIZE 1024
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <unistd.h>
+#include <sys/types.h>
+#include <sys/wait.h>
+
+
+.SH USE
+
+The simple shell is a Unix command line interpreter.
+It will interpeter the first word as a command, and the following as the series of arguments.
+
+.SH SEE ALSO
+
+shell, bash
+
+.SH AUTHORS
+Edison Ortiz Jimenez <9492@holbertonstudents.com>,
+ Zuleyka I. Rubio Santiago <9497@holbertonstudents.com>
+
+
