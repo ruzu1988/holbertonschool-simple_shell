@@ -13,7 +13,7 @@
  > ./hsh
 
  D- Exit with the exit command
- >exit
+ > exit
 
 ## Libraries
 
@@ -29,55 +29,55 @@ It will interpret the first word as a command, and the following as the series o
 
 ### Examples
 ls
-...
+```
 $ ls
 functions.c hsh main.h README.md shell.c
 $
-...
+ ```
 echo
-...
-$echo Hello World!
-Hello World!
-$
-...
+
+    $echo Hello World!
+    Hello World!
+    $
+
 $pwd
 /home/.../holberton-simple_shell
 $
-...
+```
 ### Some other commands that work
-...
+```
 pwd
-...
-...
+```
+```
 ls
-...
-...
+```
+```
 less
-...
-...
+```
+```
 file
-...
-...
+```
+```
 cp
-...
-...
+```
+```
 rm
-...
-...
+```
+```
 mkdir
-...
-...
+```
+```
 touch
-...
-...
+```
+```
 clear
-...
+```
 and more
 ### For futher help
 For further help with the simple shell, and with wich commands it runs; install our man page and run it with:
-...
+```
 man ./man_1_simple_shell
-...
+```
 ## Contributors
 Edison Ortiz Jimenez (9492@holbertonstudents.com)
 Zuleyka I. Rubio Santiago (9497@holbertonstudents.com)
