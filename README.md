@@ -48,33 +48,39 @@ $
 ```
 pwd
 ```
+
 ```
 ls
 ```
+
 ```
 less
 ```
+
 ```
 file
 ```
+
 ```
 cp
 ```
+
 ```
 rm
 ```
-<<<<<<< HEAD
+
 ```
-=======
-...
->>>>>>> d49ef9b97316983078e21e8ce0aa162227a6e0d6
 mkdir
 ```
+
 ```
 touch
 ```
+
 ```
 clear
+```
+
 ```
 and more
 ### For futher help
