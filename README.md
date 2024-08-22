@@ -1,4 +1,4 @@
-#holberton-simple-shell
+# holberton-simple-shell
 
 ## Description
 
