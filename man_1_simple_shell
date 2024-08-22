@@ -2,35 +2,36 @@
 
 .SH NAME
 .B simple shell
-/ Minimalisct Unix command line interpreter
+\- Minimalistic Unix command line interpreter
 
-.SB simple shell
 
 .SH SYNOPSIS
 .B ./hsh
-
-.B #inclide "main.h"
-
-.B ./hsh
-
-.B [command] [argument]
+.RI [command] " " [argument]
 
 .SH DESCRIPTION
 
-Minimalistic Unix command line interpreter that executes commands from a user terminal
+Minimalistic Unix command line interpreter that executes commands from a user terminal. The
+shell reads commands from standard intput and executes them.
 
 .SH INSTALLATION
 
-Compile files
+Compile the files using the following command:
 
-gcc -Wall -Werror -pedantic super_simple_shell.c execute.c -o super_simple_shell
+.nf
+.B gcc -Wall -Werror -pedantic super_simple_shell.c execute.c -o super_simple_shell
+.fi
 
-Run the command to open the simple shell
+Then, run the following command to open the simple shell:
 
-./hsh
+.nf
+.B ./hsh
+.fi
 
 .SH LIBRARIES USED
+The following libraries and definitions are used in this project:
 
+.nf
 #define BUFFER_SIZE 1024
 #include <stdio.h>
 #include <stdlib.h>
@@ -38,19 +39,26 @@ Run the command to open the simple shell
 #include <unistd.h>
 #include <sys/types.h>
 #include <sys/wait.h>
-
+.fi
 
 .SH USE
-
 The simple shell is a Unix command line interpreter.
-It will interpeter the first word as a command, and the following as the series of arguments.
+It will interpreters the first word as a command, and the following as the series of arguments.
+
+Examples:
+.nf
+.B ./hsh
+$ ls -l
+$ pwd
+$ exit
+.fi
 
 .SH SEE ALSO
-
-shell, bash
+.BR shell
+.BR bash
 
 .SH AUTHORS
 Edison Ortiz Jimenez <9492@holbertonstudents.com>,
- Zuleyka I. Rubio Santiago <9497@holbertonstudents.com>
+Zuleyka I. Rubio Santiago <9497@holbertonstudents.com>
 
 
