@@ -9,22 +9,18 @@ int main(void)
 	char **args;
 	char *input = NULL;
 	size_t buffer_size = 0;
-	int count = 0;
-	int mode;
+	int count = 0, mode = isatty(STDIN_FILENO);
 
 	while (1)
 	{
-		mode = isatty(STDIN_FILENO);
 		if (mode)
 			printf("#$ ");
-		/* Reading the user input */
 		if (getline(&input, &buffer_size, stdin) == -1)
 		{
 			free(input);
 			break; /* Handling the eof (ctrl + D) */
 		}
 		count++;
-		/* Trim trailing the newline */
 		if (input[strlen(input)] == '\n')
 			input[strlen(input)] = '\0';
 		args = parse_input(input); /* Tokenize the user input */
