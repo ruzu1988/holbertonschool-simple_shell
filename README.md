@@ -1,110 +1,90 @@
-# holberton-simple-shell
+# My Simple Shell
 
-## Description
+A simple custom shell program written in C that interprets and executes user commands.
+This shell can execute commands from the user's environment, handle basic command parsing, and work with environment variables.
 
-holberton-simple-shell is a Unix command-line interpreter that allows users to
-execute commands in a minimalist shell environment. This project was developed
-as part of the Holberton School curriculum, with the goal of understanding how
-shells work internally and how processes are managed in Unix.
+## Table of Contents
+
+- [Features](#features)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Commands](#commands)
+- [Included Libraries](#included-libraries)
+- [Environment Variables](#environment-variables)
+- [Contributing](#contributing)
+- [Author](#author)
+
+## Features
+
+- Supports execution of commands in the system's PATH.
+- Handles environment variables.
+- Basic command parsing and tokenization.
+- Simple error handling and reporting.
+- Interactive mode with a custom prompt (`#cisfun$ `).
+- Exits the shell using the `exit` command, Ctrl + D, Ctrl + C and Ctrl + Z.
 
 ## Installation
- A- Clone repository
- Clone the repository to your local machine using the following command:
-    git clone  https://github.com/ruzu1988/holbertonschool-simple_shell.git
 
- B- Compile files
- Compile the source files using 'gcc':
-    > gcc -Wall -Werror -pedantic super_simple_shell.c execute.c -o super_simple_shell
+1. **Clone the repository**:
+    ```bash
+    git clone git@github.com:Jessy-316/holbertonschool-simple_shell.git
+    ```
+2. **Navigate into the project directory**:
+    ```bash
+    cd holbertonschool-simple_shell
+    ```
+3. **Compile the program**:
+    ```bash
+    gcc -Wall -Werror -Wextra -pedantic -std=gnu89 *.c -o hsh
+    ```
+    This will generate the `hsh` executable.
 
- C- Run shell command
- Start the shell the following command:
- > ./hsh
+## Usage
 
- D- Exit with the exit command
- To the shell, use the 'exit' command:
- > exit
+To start the shell, run the following command in your terminal:
 
-## Libraries
-The project uses the following standard C libraries:
-
-    #include <stdio.h>
-    #include <stdlib.h>
-    #include <string.h>
-    #include <unistd.h>
-    #include <sys/wait.h>
-
-## Use
-The simple shell is a Unix command-line interpreter. It interprets the first word as a command, and the following
- as a series of arguments.
-
-### Examples
-Here are some basic examples of how to use the shell:
-
-ls
-```
-$ ls
-functions.c hsh main.h README.md shell.c
-$
-```
-echo
-
-    $echo Hello World!
-    Hello World!
-    $
-
-$pwd
-/home/.../holberton-simple-shell
-$
-```
-### Some other commands that work
-The simple also supports the following commands:
-```
-pwd
+```bash
+./hsh
 ```
 
-```
-ls
-```
+## Commands
 
-```
-less
-```
-
-```
-file
-```
-
-```
-cp
-```
-
-```
-rm
-```
-
-```
-mkdir
-```
-
-```
-touch
-```
-
-```
-clear
-```
-
-```
-and more
-### For futher help
-For further help with the simple shell and the commands it supports,install our man
- page and run it with:
-
-```
-man ./man_1_simple_shell
-```
-## Contributors
-Edison Ortiz Jimenez (9492@holbertonstudents.com)
-Zuleyka I. Rubio Santiago (9497@holbertonstudents.com)
+- exit - Exits the shell.
+- env - prints the environment.
 
 
+## Environment Variables
+
+The shell utilizes environment variables defined by the system. 
+You can access these variables using the '_getenv' function.
+
+Example of accessing the 'PATH' environment variable:
+```bash
+char *path = _getenv("PATH")
+```
+
+## Contributing
+
+Contributions are welcomed!
+If you would like to contribute to this project, please follow these steps:
+
+1. **Clone the repositoriy.**
+
+2. **Create a new branch**
+    ```bash
+    git checkout -b feature-branch
+    ```
+3. **Make your changes and commit them**
+    ```bash
+    git commit -am 'Added new feature'
+    ```
+4. **Push to the branch**
+    ```bash
+    git push origin feature-branch
+    ```
+5. **Make a pull request**
+
+## Author
+
+**Edison Ortiz Jimenez** &
+**Zuleyka I. Rubio Santiago**
