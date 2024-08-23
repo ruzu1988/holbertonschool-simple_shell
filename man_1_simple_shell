@@ -1,7 +1,7 @@
 .TH SHELL " 16 August 2024" "Simple Shell" "man page"
 
 .SH NAME
-.B simple shell
+.B holberton simple shell
 \- Minimalistic Unix command line interpreter
 
 
@@ -11,53 +11,51 @@
 
 .SH DESCRIPTION
 
-Minimalistic Unix command line interpreter that executes commands from a user terminal. The
-shell reads commands from standard intput and executes them.
+Holberton simple shell, is a custom implementation of a simple  Unix command line interpreter that executes commands from a user terminal. The
+shell. A minimalistic approach was taken in its desing and implementation to only provide the basic
+functions of a shell similar to the deseing by the pioneer of Unix shells, Ken Thompson. Desing,
+          compilation. Reads commands from standard intput and executes them.
 
-.SH INSTALLATION
+          .SH OVERVIEW
 
-Compile the files using the following command:
+          Similar to other legendary command line interfaces, the simple_shell takes input from either the
+          terminal or scripts and executes them as they appear.
 
-.nf
-.B gcc -Wall -Werror -pedantic super_simple_shell.c execute.c -o super_simple_shell
-.fi
+          Then, run the following command to open the simple shell:
 
-Then, run the following command to open the simple shell:
+          .nf
+          .B ./hsh
+          .fi
 
-.nf
-.B ./hsh
-.fi
+          .SH LIBRARIES USED
+          The following libraries and definitions are used in this project:
 
-.SH LIBRARIES USED
-The following libraries and definitions are used in this project:
-
-.nf
+          .nf
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 #include <unistd.h>
 #include <sys/types.h>
 #include <sys/wait.h>
-.fi
+          .fi
 
-.SH USE
-The simple shell is a Unix command line interpreter.
-It will interpreters the first word as a command, and the following as the series of arguments.
+          .SH USE
+          The simple shell is a Unix command line interpreter.
+          It will interpreters the first word as a command, and the following as the series of arguments.
 
-Examples:
-.nf
-.B ./hsh
-$ ls -l
-$ pwd
-$ exit
-.fi
+          Examples:
+          .nf
+          .B ./hsh
+          $ ls -l
+          $ pwd
+          $ exit
+          .fi
 
-.SH SEE ALSO
-.BR shell
-.BR bash
+          .SH SEE ALSO
+          .BR shell
+          .BR bash
 
-.SH AUTHORS
-Edison Ortiz Jimenez <9492@holbertonstudents.com>,
-Zuleyka I. Rubio Santiago <9497@holbertonstudents.com>
-
+          .SH AUTHORS
+          Edison Ortiz Jimenez <9492@holbertonstudents.com>,
+          Zuleyka I. Rubio Santiago <9497@holbertonstudents.com>
 
